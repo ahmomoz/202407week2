@@ -3,7 +3,6 @@
   v2.0 | 20110126
   License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -13,39 +12,45 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
+
 body {
-	line-height: 1;
+  line-height: 1;
 }
+
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
+
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: "";
+  content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* base */
@@ -53,9 +58,11 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 *, *:before, *:after {
   box-sizing: border-box;
 }
+
 body {
   font-family: "Bruno Ace SC", sans-serif;
   font-weight: 400;
@@ -64,15 +71,19 @@ body {
   color: #FFFFFF;
   line-height: 1.5;
 }
+
 a {
   text-decoration: none;
 }
+
 h1 {
   font-size: 8rem;
 }
+
 h2 {
   font-size: 4rem;
 }
+
 h3 {
   font-size: 1.25rem;
 }
@@ -82,121 +93,133 @@ h3 {
   font-size: 1.5rem;
   margin-top: 2.25rem;
 }
+
 .text-gray {
   color: #D1D1D1;
 }
+
 .text-white {
   color: #FFFFFF;
 }
+
 .text-black {
   color: #000000;
 }
+
 .text-green {
   color: #00FFA3;
 }
+
 .bg-black {
   background-color: #000000;
 }
+
 .bg-white {
   background-color: #FFFFFF;
 }
+
 .wrap-padding {
   padding: 10rem 19.5rem;
 }
+
 .container {
   display: flex;
   justify-content: center;
 }
+
 .mt-25 {
   margin-top: 2.5rem;
 }
+
 .my-25 {
   margin: 2.5rem 0;
 }
+
 .py-60 {
   padding: 6rem 0;
 }
+
 .py-45 {
   padding-top: 4.5rem;
   padding-bottom: 4.5rem;
 }
+
 .link-btn {
   border-radius: 2rem;
   padding: 0.75rem 1.5rem;
-
-  span {
-    margin-left: 0.5rem;
-  }
 }
+.link-btn span {
+  margin-left: 0.5rem;
+}
+
 .card {
   max-width: 19.125rem;
   color: #15161D;
   border: 0.063rem solid #E3E3E3;
   padding: 1rem;
-  box-shadow: 0 .25rem .5rem 0 #00000014;
-
-  h3 {
-    margin-bottom: .25rem;
-  }
+  box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.0784313725);
+}
+.card h3 {
+  margin-bottom: 0.25rem;
 }
 
 /* nav */
-.nav-wrap {
-  ul {
-    gap: 3.813rem;
-  }
+.nav-wrap ul {
+  gap: 3.813rem;
 }
+
 /* header */
 .header-wrap > .container {
   gap: 1.5rem;
 }
-.header-img {
-  img {
-    display: block;
-  }
+
+.header-img img {
+  display: block;
 }
+
 .header-content {
   max-width: 39.75rem;
   margin: auto 0;
-
-  h1, .header-btn {
-    text-align: right;
-  }
-
-  a {
-    display: inline-flex;
-    align-items: center;
-  }
 }
+.header-content h1, .header-content .header-btn {
+  text-align: right;
+}
+.header-content a {
+  display: inline-flex;
+  align-items: center;
+}
+
 /* intro */
 .intro-wrap {
-  background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true') no-repeat;
-
-  .container,.intro-img  {
-    gap: 1.5rem;
-  }
+  background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true") no-repeat;
 }
+.intro-wrap .container, .intro-wrap .intro-img {
+  gap: 1.5rem;
+}
+
 .intro-text {
   max-width: 32.875rem;
 }
+
 .intro-span {
   margin-top: 2rem;
-
-  span {
-    margin-right: .5rem;
-  }
 }
+.intro-span span {
+  margin-right: 0.5rem;
+}
+
 .intro-img {
   display: flex;
-
-  img {
-    display: block;
-  }
 }
+.intro-img img {
+  display: block;
+}
+
 /* about */
 .about-wrap > .container {
-  gap: 8.375rem
+  gap: 8.375rem;
 }
+
 .about-card {
   max-width: 39.75rem;
   display: flex;
@@ -205,26 +228,26 @@ h3 {
   gap: 1.5rem;
   margin: auto 0;
 }
+
 .about-text {
   max-width: 32.875rem;
 }
+
 /* contact */
 .contact-wrap {
-  background: linear-gradient(to bottom,#050014, #01021E 89%);
-
-  .container {
-    align-items: center;
-  }
-  .container > svg {
-    margin-left: 1rem;
-    margin-right: 5.813rem;
-  }
-  .container > img {
-    display: block;
-    margin-left: 1.25rem;
-
-    &:hover {
-      filter: drop-shadow(0 0 .5rem #9094ffCC) drop-shadow(0 .25rem .25rem #ffffff4f);
-    }
-  }
+  background: linear-gradient(to bottom, #050014, #01021E 89%);
 }
+.contact-wrap .container {
+  align-items: center;
+}
+.contact-wrap .container > svg {
+  margin-left: 1rem;
+  margin-right: 5.813rem;
+}
+.contact-wrap .container > img {
+  display: block;
+  margin-left: 1.25rem;
+}
+.contact-wrap .container > img:hover {
+  filter: drop-shadow(0 0 0.5rem rgba(144, 148, 255, 0.8)) drop-shadow(0 0.25rem 0.25rem rgba(255, 255, 255, 0.3098039216));
+}/*# sourceMappingURL=main.css.map */
