@@ -57,6 +57,7 @@ table {
 img {
   max-width: 100%;
   height: auto;
+  vertical-align: middle;
 }
 
 *, *:before, *:after {
@@ -132,16 +133,23 @@ h3 {
 }
 
 .my-25 {
-  margin: 2.5rem 0;
-}
-
-.py-60 {
-  padding: 6rem 0;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .py-45 {
   padding-top: 4.5rem;
   padding-bottom: 4.5rem;
+}
+
+.py-60 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.py-100 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .link-btn {
@@ -171,10 +179,6 @@ h3 {
 /* header */
 .header-wrap > .container {
   gap: 1.5rem;
-}
-
-.header-img img {
-  display: block;
 }
 
 .header-content {
@@ -211,9 +215,6 @@ h3 {
 .intro-img {
   display: flex;
 }
-.intro-img img {
-  display: block;
-}
 
 /* about */
 .about-wrap > .container {
@@ -245,9 +246,60 @@ h3 {
   margin-right: 5.813rem;
 }
 .contact-wrap .container > img {
-  display: block;
   margin-left: 1.25rem;
 }
 .contact-wrap .container > img:hover {
   filter: drop-shadow(0 0 0.5rem rgba(144, 148, 255, 0.8)) drop-shadow(0 0.25rem 0.25rem rgba(255, 255, 255, 0.3098039216));
+}
+
+/* project */
+.project-wrap .container {
+  width: 81rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-title {
+  width: 46.625rem;
+  margin-left: auto;
+}
+.project-title h2 {
+  align-items: left;
+}
+
+.project-content {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.project-content-left {
+  max-width: 26rem;
+}
+
+.project-content-right {
+  max-width: 53.5rem;
+}
+
+.project-content-main {
+  max-width: 53.5rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.project-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.project-text a {
+  display: inline-flex;
+  align-items: center;
+}
+
+.project-content-right-img {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1.75rem;
 }/*# sourceMappingURL=main.css.map */

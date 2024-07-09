@@ -52,6 +52,7 @@ table {
 img {
   max-width: 100%;
   height: auto;
+  vertical-align: middle;
 }
 *, *:before, *:after {
   box-sizing: border-box;
@@ -111,14 +112,20 @@ h3 {
   margin-top: 2.5rem;
 }
 .my-25 {
-  margin: 2.5rem 0;
-}
-.py-60 {
-  padding: 6rem 0;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 .py-45 {
   padding-top: 4.5rem;
   padding-bottom: 4.5rem;
+}
+.py-60 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.py-100 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 .link-btn {
   border-radius: 2rem;
@@ -149,11 +156,6 @@ h3 {
 /* header */
 .header-wrap > .container {
   gap: 1.5rem;
-}
-.header-img {
-  img {
-    display: block;
-  }
 }
 .header-content {
   max-width: 39.75rem;
@@ -188,10 +190,6 @@ h3 {
 }
 .intro-img {
   display: flex;
-
-  img {
-    display: block;
-  }
 }
 /* about */
 .about-wrap > .container {
@@ -220,11 +218,58 @@ h3 {
     margin-right: 5.813rem;
   }
   .container > img {
-    display: block;
     margin-left: 1.25rem;
 
     &:hover {
       filter: drop-shadow(0 0 .5rem #9094ffCC) drop-shadow(0 .25rem .25rem #ffffff4f);
     }
   }
+}
+/* project */
+.project-wrap {
+  .container {
+    width: 81rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.project-title {
+  width: 46.625rem;
+  margin-left: auto;
+  
+  h2 {
+    align-items: left;
+  }
+}
+.project-content {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+.project-content-left {
+  max-width: 26rem;
+}
+.project-content-right {
+  max-width: 53.5rem;
+}
+.project-content-main {
+  max-width: 53.5rem;
+  display: flex;
+  gap: 1.5rem;
+}
+.project-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  a {
+    display: inline-flex;
+    align-items: center;
+  }
+}
+.project-content-right-img {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1.75rem;
 }
